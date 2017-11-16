@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.jonmid.productos.Views.CreateProductActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nuevo Producto"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextWhite">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/id_tiet_new_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextWhite">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/id_tiet_new_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripcion"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextWhite">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/id_tiet_new_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio"
+                android:inputType="number"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/EditTextWhite">
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/id_tiet_new_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Url Imagen"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar producto"
+            android:theme="@style/RaisedButtonDark"
+            android:onClick="createProduct"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

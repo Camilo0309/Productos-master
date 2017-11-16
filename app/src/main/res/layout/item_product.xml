@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="10dp"
+    android:background="@drawable/border_item">
+
+    <ImageView
+        android:id="@+id/id_img_item_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/id_tv_item_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="$130.000"/>
+        <TextView
+            android:id="@+id/id_tv_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="10dp"
+            android:text="Cable convertidor HDMI Mac"/>
+        <TextView
+            android:id="@+id/id_tv_item_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/primary_text_light"
+            android:textSize="8dp"
+            android:layout_marginTop="5dp"
+            android:text="Es compacto y de peso ligero: solución plug-and-play ideal para viajes o cuando le sea necesario traer su ordenador propio al trabajar en una oficina."/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2">
+
+        <ImageButton
+            android:id="@+id/id_btn_item_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/RaisedButtonDark"
+            android:src="@drawable/edit"/>
+
+        <ImageButton
+            android:id="@+id/id_btn_item_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:theme="@style/RaisedButtonDark"
+            android:src="@drawable/delete"/>
+
+    </LinearLayout>
+
+</LinearLayout>
